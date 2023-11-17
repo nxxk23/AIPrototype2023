@@ -1,6 +1,7 @@
 # **Basic Linux Command Line 💻**
 
-## **1) การจัดการ Folder/File 📁**
+## **[1) การจัดการ Folder/File 📁](https://github.com/nxxk23/AIPrototype2023/files/13395157/Lecture-1.pdf)**
+
 
  * สร้าง folder
    ```
@@ -61,4 +62,3 @@
     ```
         $cp ./{path ต้นทาง}/{path ปลายทาง}
     ```
-    
