@@ -1,7 +1,8 @@
 # **Basic Linux Command Line 💻**
 
-## **[1) การจัดการ Folder/File 📁](https://github.com/nxxk23/AIPrototype2023/files/13395157/Lecture-1.pdf)**
+## **Folder/File Management📁**
 
+![Lecture 1-1](https://github.com/nxxk23/AIPrototype2023/assets/108257495/9be0336e-cd00-4fca-bb48-990df9e6c9ab)
 
  * สร้าง folder
    ```
