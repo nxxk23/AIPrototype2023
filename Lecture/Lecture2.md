@@ -26,7 +26,7 @@
 
 * adduser
 ```
-sudo adduser # test adduser into cloud and ssh with friends ip
+sudo adduser # test adduser into cloud and ssh with friends'ip
 ```
 
 * chmod
