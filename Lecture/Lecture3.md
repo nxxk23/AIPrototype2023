@@ -90,7 +90,7 @@ git push
   github > setting > dev mode > personal access tokens > tokens (classic) > new personal access token(classic)
   note : test , expiration date, repo as full control >> generate tokens
 ```
-    ****then go to git push again fill password: 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****
+    ****then go to git push again fill password: ----****
 
 * map drive path บน windows ให้ตรงกันก่อน
 ```
