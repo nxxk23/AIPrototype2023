@@ -19,7 +19,7 @@ def parse_input():
     parser.add_argument(
         '--XX', 
         type = int,
-        required=True,
+        default=7,
         help='input for XX'
     )
     args = parser.parse_args()
@@ -35,7 +35,7 @@ if __name__=="__main__":
 
     input_v = parse_input()
     print(f'the input num is {input_v.num}')
-    
+
     input_v = parse_input()
     print(f'the input XX is {input_v.XX}')
 
