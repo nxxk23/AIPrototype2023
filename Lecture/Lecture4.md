@@ -6,6 +6,9 @@
  > code แบบ .py เป็น script สำหรับรัน
 
 ## Process this on CMD
+
+![image](https://github.com/nxxk23/AIPrototype2023/assets/108257495/b659ead2-6f2a-4749-a436-bbf7f55aa58f)
+
 **on nink@DESKTOP-AB2T90E:~/outside/ubuntu/AIPrototype2023$**
  * Step 1: Create file.py 
 ```
@@ -17,7 +20,7 @@ code firstpy.py #enter จะเปิด vscode ที่สามารถเ�
 git pull
 git add fisrtpy.py
 git commit -m "{commit describe}"
-git push # save on internet
+git push #enter username and password of youe GH
 ```
  * Step 3: Test execute file
 **on Virtual Machine path that we already ssh into server**
@@ -46,6 +49,7 @@ git push # save on internet
 git pull
 python firstpy.py
 ```
+---
 
 ## [Test edit file (ครั้งที่ 3)](firstpy.py)
 ```
