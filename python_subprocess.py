@@ -1,7 +1,7 @@
 import subprocess # for execute terminal command
 
 if __name__ == "__main__":
-    basic terminal command
+    #basic terminal command
     subprocess.run(["ls","-ltr"]) #look on file
     subprocess.run(["rm","-r","/home/thisisninkspaces/testfolder1"]) # remove file
     print(f"first run num=100 XX=90")
