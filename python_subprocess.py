@@ -1,12 +1,6 @@
 ##HW เขียน subprocess sum output ทั้งหมดของ command 3 อันข้างบน (ตัวเลขก่อน Hello World!)
 import subprocess
 
-def get_numeric_value(output):
-    try:
-        return int(output.strip())
-    except ValueError:
-        return 0
-
 if __name__ == "__main__":
     # Basic terminal command
     #subprocess.run(["ls", "-ltr"])  # look on file
@@ -22,10 +16,8 @@ if __name__ == "__main__":
     print("Output 2:", output2.stdout.decode('utf-8'))
     print("Output 3:", output3.stdout.decode('utf-8'))
 
-    # Get numeric values and sum the results
-    result_sum = sum([get_numeric_value(output1.stdout.decode('utf-8')),
-                     get_numeric_value(output2.stdout.decode('utf-8')),
-                     get_numeric_value(output3.stdout.decode('utf-8'))])
+    # Collect numeric values and sum the results
+    result_sum = sum([int(output1.stdout), int(output2.stdout), int(output3.stdout)])
 
     print(f"Summation of results: {result_sum}")
 
