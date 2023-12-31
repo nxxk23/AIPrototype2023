@@ -11,8 +11,8 @@ def run_command(command):
 
 if __name__ == "__main__":
     # Basic terminal command
-    #subprocess.run(["ls", "-ltr"])  # look on file
-    #subprocess.run(["rm", "-r", "/home/thisisninkspaces/testfolder1"])  # remove file
+    subprocess.run(["ls", "-ltr"])  # look on file
+    subprocess.run(["rm", "-r", "/home/thisisninkspaces/testfolder1"])  # remove file
 
     # Run firstpy.py with different inputs
     commands = [
@@ -25,8 +25,11 @@ if __name__ == "__main__":
 
     for command in commands:
         result = run_command(command)
-        print(result)
-        results.append(int(result))
+        try:
+            result_int = int(result)
+            results.append(result_int)
+        except ValueError:
+            print(f"Non-integer output: {result}")
 
     # Summation of results
     total_sum = sum(results)
