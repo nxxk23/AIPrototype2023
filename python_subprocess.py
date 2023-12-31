@@ -27,11 +27,12 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     output1 = run_command(args)
+    args.num = args.num2
+    args.XX = args.XX2
     output2 = run_command(args)
+    args.num = args.num3
+    args.XX = args.XX3
     output3 = run_command(args)
 
     result_sum = output1 + output2 + output3
     print(f"Summation of results: {result_sum}")
-
-
-
