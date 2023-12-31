@@ -1,6 +1,12 @@
 ##HW เขียน subprocess sum output ทั้งหมดของ command 3 อันข้างบน (ตัวเลขก่อน Hello World!)
 import subprocess
 
+def extract_numeric(text):
+    for line in text.splitlines():
+        if line.strip().isdigit() or (line.strip().lstrip('-').isdigit() and '-' in line):
+            return int(line.strip())
+    return 0
+
 if __name__ == "__main__":
     # Basic terminal command
     subprocess.run(["ls", "-ltr"])  # look on file
@@ -16,10 +22,13 @@ if __name__ == "__main__":
     print("Output 2:", output2.stdout.decode('utf-8'))
     print("Output 3:", output3.stdout.decode('utf-8'))
 
-    # Collect numeric values and sum the results
-    result_sum = sum([int(output1.stdout.splitlines()[-1]), int(output2.stdout.splitlines()[-1]), int(output3.stdout.splitlines()[-1])])
+    # Extract numeric parts, convert to integers, and sum the results
+    result_sum = sum([extract_numeric(output1.stdout.decode('utf-8')),
+                      extract_numeric(output2.stdout.decode('utf-8')),
+                      extract_numeric(output3.stdout.decode('utf-8'))])
 
     print(f"Summation of results: {result_sum}")
+
 
 
 
