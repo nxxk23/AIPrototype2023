@@ -1,14 +1,10 @@
 ##HW เขียน subprocess sum output ทั้งหมดของ command 3 อันข้างบน (ตัวเลขก่อน Hello World!)
 import subprocess
 
-def extract_numeric(text):
-    numeric_part = ''.join(char if char.isdigit() or char in {'-', ' '} else ' ' for char in text)
-    return numeric_part.strip()
-
 if __name__ == "__main__":
     # Basic terminal command
-    #subprocess.run(["ls", "-ltr"])  # look on file
-    #subprocess.run(["rm", "-r", "/home/thisisninkspaces/testfolder1"])  # remove file
+    subprocess.run(["ls", "-ltr"])  # look on file
+    subprocess.run(["rm", "-r", "/home/thisisninkspaces/testfolder1"])  # remove file
 
     # Capture the output of each subprocess.run command
     output1 = subprocess.run(["python", "firstpy.py", "--num", "100", "--XX", "90"], capture_output=True)
@@ -20,12 +16,11 @@ if __name__ == "__main__":
     print("Output 2:", output2.stdout.decode('utf-8'))
     print("Output 3:", output3.stdout.decode('utf-8'))
 
-    # Extract numeric parts, convert to integers, and sum the results
-    result_sum = sum([int(extract_numeric(output1.stdout.decode('utf-8'))),
-                      int(extract_numeric(output2.stdout.decode('utf-8'))),
-                      int(extract_numeric(output3.stdout.decode('utf-8')))])
+    # Collect numeric values and sum the results
+    result_sum = sum([int(output1.stdout.splitlines()[-1]), int(output2.stdout.splitlines()[-1]), int(output3.stdout.splitlines()[-1])])
 
     print(f"Summation of results: {result_sum}")
+
 
 
 
