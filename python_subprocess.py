@@ -1,10 +1,18 @@
 ##HW เขียน subprocess sum output ทั้งหมดของ command 3 อันข้างบน (ตัวเลขก่อน Hello World!)
 import subprocess
+import re
 
 def run_firstpy(num, XX):
     print(f"Running firstpy.py with num={num} XX={XX}")
     result = subprocess.run(["python", "firstpy.py", "--num", str(num), "--XX", str(XX)], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    return int(result.stdout.decode('utf-8').strip())  # Convert output to int
+    
+    # Extract numeric part using regular expression
+    numeric_part = re.search(r'\b\d+\b', result.stdout.decode('utf-8').strip())
+    
+    if numeric_part:
+        return int(numeric_part.group())
+    else:
+        return 0  # Return 0 if no numeric part is found
 
 if __name__ == "__main__":
     # Basic terminal command
