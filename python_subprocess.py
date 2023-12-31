@@ -17,9 +17,10 @@ if __name__ == "__main__":
     print("Output 3:", output3.stdout.decode('utf-8'))
 
     # Collect numeric values and sum the results
-    result_sum = sum([int(output1.stdout), int(output2.stdout), int(output3.stdout)])
+    result_sum = sum([int(output1.stdout.decode('utf-8')), int(output2.stdout.decode('utf-8')), int(output3.stdout.decode('utf-8'))])
 
     print(f"Summation of results: {result_sum}")
+
 
 
 
