@@ -1,8 +1,11 @@
 ##HW เขียน subprocess sum output ทั้งหมดของ command 3 อันข้างบน (ตัวเลขก่อน Hello World!)
 import subprocess
 
-def extract_numeric(text):
-    return ''.join(char if char.isdigit() or char in {'-', ' '} else ' ' for char in text)
+def get_numeric_value(output):
+    try:
+        return int(output.strip())
+    except ValueError:
+        return 0
 
 if __name__ == "__main__":
     # Basic terminal command
@@ -19,11 +22,12 @@ if __name__ == "__main__":
     print("Output 2:", output2.stdout.decode('utf-8'))
     print("Output 3:", output3.stdout.decode('utf-8'))
 
-    # Extract numeric parts and sum the results
-    result_sum = sum(map(int, [extract_numeric(output1.stdout.decode('utf-8')),
-                               extract_numeric(output2.stdout.decode('utf-8')),
-                               extract_numeric(output3.stdout.decode('utf-8'))]))
+    # Get numeric values and sum the results
+    result_sum = sum([get_numeric_value(output1.stdout.decode('utf-8')),
+                     get_numeric_value(output2.stdout.decode('utf-8')),
+                     get_numeric_value(output3.stdout.decode('utf-8'))])
 
     print(f"Summation of results: {result_sum}")
+
 
 
