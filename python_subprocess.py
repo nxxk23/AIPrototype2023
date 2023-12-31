@@ -33,3 +33,4 @@ if __name__ == "__main__":
 
     # Sum the results
     result_sum = sum([result1, result2, result3])
+    print(f"Summation of {result1} + ({result2}) + {result3} is: {result_sum}")
