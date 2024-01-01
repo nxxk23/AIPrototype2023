@@ -1,5 +1,5 @@
-##HW เขียน subprocess sum output ทั้งหมดของ command 3 อันข้างบน (ตัวเลขก่อน Hello world!)
 import subprocess
+import argparse
 
 def extract_numeric(text):
     for line in text.splitlines():
@@ -7,30 +7,58 @@ def extract_numeric(text):
             return int(line.strip())
     return 0
 
+def run_firstpy(num, XX=7):
+    command = ["python", "firstpy.py", "--num", str(num), "--XX", str(XX)]
+    output = subprocess.run(command, capture_output=True)
+    result = extract_numeric(output.stdout.decode('utf-8'))
+    
+    # Use argparse to get values from firstpy.py
+    args = argparse.Namespace(num=num, XX=XX)
+    
+    if num == 100 and XX == 90:
+        print("first run")
+    elif num == -10 and XX == -90:
+        print("second run")
+    elif XX == 7:
+        print("third run")
+    else:
+        print(f"another run with num={num} and XX={XX}")
+
+    print(f"the input XX is {XX}")
+    print("We are in the main function")
+    print(result)
+    print("Hello world!")
+    print("---------------------------------------------")
+    return result, args
+
 if __name__ == "__main__":
-    # Basic terminal command
-    # subprocess.run(["ls", "-ltr"])  # look on file
-    # subprocess.run(["rm", "-r", "/home/thisisninkspaces/testfolder1"])  # remove file
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--num", type=int, help="Value for --num")
+    parser.add_argument("--XX", type=int, help="Value for --XX")
+    args = parser.parse_args()
 
-    # Capture the output of each subprocess.run command
-    output1 = subprocess.run(["python", "firstpy.py", "--num", "100", "--XX", "90"], capture_output=True)
-    output2 = subprocess.run(["python", "firstpy.py", "--num", "-10", "--XX", "-90"], capture_output=True)
-    output3 = subprocess.run(["python", "firstpy.py", "--num", "0"], capture_output=True)
+    # Perform the original runs
+    runs = [
+        (100, 90),
+        (-10, -90),
+        (1, 7),  # Specify both num and XX for the third run
+                # Add more runs as needed
+    ]
 
-    # Print the captured output for reference
-    print("Output 1:", output1.stdout.decode('utf-8'))
-    print("Output 2:", output2.stdout.decode('utf-8'))
-    print("Output 3:", output3.stdout.decode('utf-8'))
+    results = []
+    for num, XX in runs:
+        result, _ = run_firstpy(num, XX)
+        results.append(result)
 
-    # Extract numeric parts, convert to integers, and print the results
-    result1 = extract_numeric(output1.stdout.decode('utf-8'))
-    result2 = extract_numeric(output2.stdout.decode('utf-8'))
-    result3 = extract_numeric(output3.stdout.decode('utf-8'))
+    # Handle additional run
+    if args.num is not None and args.XX is not None:
+        result, _ = run_firstpy(args.num, args.XX)
+        results.append(result)
+        print(f"Result for additional run: {result}")
 
-    print(f"Result 1: {result1}")
-    print(f"Result 2: {result2}")
-    print(f"Result 3: {result3}")
+    print("Results:")
+    for i, result in enumerate(results, start=1):
+        print(f"Result {i}: {result}")
 
-    # Sum the results
-    result_sum = sum([result1, result2, result3])
-    print(f"Summation of {result1} + ({result2}) + {result3} is: {result_sum}")
+    result_sum = sum(results)
+    print(f"Summation of all results is: {result_sum}")   
