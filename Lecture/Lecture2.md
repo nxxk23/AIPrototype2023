@@ -1,37 +1,37 @@
-# **working on Virtual Machine Cloud ☁**
+# **ᴡᴏʀᴋɪɴɢ ᴏɴ ᴠɪʀᴛᴜᴀʟ ᴍᴀᴄʜɪɴᴇ ᴄʟᴏᴜᴅ ☁**
 
-> Create VM in Azure
+> ᴄʀᴇᴀᴛᴇ ᴠᴍ ɪɴ ᴀᴢᴜʀᴇ
 ![ssh-auth](https://github.com/nxxk23/AIPrototype2023/assets/108257495/5f66bf2e-a618-4416-b602-42bac01dd3f2)
 
->> Lecture
+>> ʟᴇᴄᴛᴜʀᴇ
 ![Lecture-2](https://github.com/nxxk23/AIPrototype2023/assets/108257495/a63e921b-df0a-4376-b66e-e3492690b900)
 
-* คำสั่ง SSH ใช้เพื่อเข้าไปบน CloudVM จะเหมือนเราทำงานบนเครื่องของเรา
+* คำสั่ง ꜱꜱʜ ใช้เพื่อเข้าไปบน ᴄʟᴏᴜᴅᴠᴍ จะเหมือนเราทำงานบนเครื่องของเรา
    ```
-   ssh thisisninksoaces@20.70.14.212
-   pass: 1Q2w3e4r5t--
+   ꜱꜱʜ ᴛʜɪꜱɪꜱɴɪɴᴋꜱᴏᴀᴄᴇꜱ@20.70.14.212
+   ᴘᴀꜱꜱ: 1Q2ᴡ3ᴇ4ʀ5ᴛ--
    ```
 
-* คำสั่ง SCP เพื่อ copy file ขึ้นไปบน internet 
+* คำสั่ง ꜱᴄᴘ เพื่อ ᴄᴏᴘʏ ꜰɪʟᴇ ขึ้นไปบน ɪɴᴛᴇʀɴᴇᴛ 
    ```
-   scp file.png user@ip:/{ปลายทาง} #ส่งไฟล์จากเครื่องเรา
-   scp user@ip:/{ต้นทาง} #ดึงไฟล์มาVM
+   ꜱᴄᴘ ꜰɪʟᴇ.ᴘɴɢ ᴜꜱᴇʀ@ɪᴘ:/{ปลายทาง} #ส่งไฟล์จากเครื่องเรา
+   ꜱᴄᴘ ᴜꜱᴇʀ@ɪᴘ:/{ต้นทาง} #ดึงไฟล์มาᴠᴍ
    ```
    
-* คำสั่ง htop ดู cpu / storage memory >> task manager of windows
+* คำสั่ง ʜᴛᴏᴘ ดู ᴄᴘᴜ / ꜱᴛᴏʀᴀɢᴇ ᴍᴇᴍᴏʀʏ >> ᴛᴀꜱᴋ ᴍᴀɴᴀɢᴇʀ ᴏꜰ ᴡɪɴᴅᴏᴡꜱ
 
-* คำสั่ง exit ใช้เพื่อออกจากตัว VM
+* คำสั่ง ᴇxɪᴛ ใช้เพื่อออกจากตัว ᴠᴍ
 ---
-> Test working on cloud
+> ᴛᴇꜱᴛ ᴡᴏʀᴋɪɴɢ ᴏɴ ᴄʟᴏᴜᴅ
 
-* adduser
+* ᴀᴅᴅᴜꜱᴇʀ
 ```
-sudo adduser # test adduser into cloud and ssh with friends'ip
+ꜱᴜᴅᴏ ᴀᴅᴅᴜꜱᴇʀ # ᴛᴇꜱᴛ ᴀᴅᴅᴜꜱᴇʀ ɪɴᴛᴏ ᴄʟᴏᴜᴅ ᴀɴᴅ ꜱꜱʜ ᴡɪᴛʜ ꜰʀɪᴇɴᴅꜱ'ɪᴘ
 ```
 
-* chmod
+* ᴄʜᴍᴏᴅ
 ```
-sudo chmod 755 user # change permission into readable/executable
+ꜱᴜᴅᴏ ᴄʜᴍᴏᴅ 755 ᴜꜱᴇʀ # ᴄʜᴀɴɢᴇ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ɪɴᴛᴏ ʀᴇᴀᴅᴀʙʟᴇ/ᴇxᴇᴄᴜᴛᴀʙʟᴇ
 ```
 
 ![vkxuqbatopk21](https://github.com/nxxk23/AIPrototype2023/assets/108257495/7be41a45-8aa0-45e7-b9a9-68cb1fd48424)
