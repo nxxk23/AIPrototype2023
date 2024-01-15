@@ -1,75 +1,75 @@
-# **Run Python File 📃**
-- data sciences ส่วนใหญ่จะอยู่ในรูปของ report แต่เวลาเราใช้งานจริงๆ จะอยู่ในรูปของ script
+# **ʀᴜɴ ᴘʏᴛʜᴏɴ ꜰɪʟᴇ 📃**
+- ᴅᴀᴛᴀ ꜱᴄɪᴇɴᴄᴇꜱ ส่วนใหญ่จะอยู่ในรูปของ ʀᴇᴘᴏʀᴛ แต่เวลาเราใช้งานจริงๆ จะอยู่ในรูปของ ꜱᴄʀɪᴘᴛ
   
- > code แบบ .ipynb ที่สามารถเขียนและตกแต่งได้ มี header, section
+ > ᴄᴏᴅᴇ แบบ .ɪᴘʏɴʙ ที่สามารถเขียนและตกแต่งได้ มี ʜᴇᴀᴅᴇʀ, ꜱᴇᴄᴛɪᴏɴ
 
- > code แบบ .py เป็น script สำหรับรัน
+ > ᴄᴏᴅᴇ แบบ .ᴘʏ เป็น ꜱᴄʀɪᴘᴛ สำหรับรัน
 
-## Process this on CMD
+## ᴘʀᴏᴄᴇꜱꜱ ᴛʜɪꜱ ᴏɴ ᴄᴍᴅ
 
 ![image](https://github.com/nxxk23/AIPrototype2023/assets/108257495/b659ead2-6f2a-4749-a436-bbf7f55aa58f)
 
-**on nink@DESKTOP-AB2T90E:~/outside/ubuntu/AIPrototype2023$**
- * Step 1: Create file.py 
+**ᴏɴ ɴɪɴᴋ@ᴅᴇꜱᴋᴛᴏᴘ-ᴀʙ2ᴛ90ᴇ:~/ᴏᴜᴛꜱɪᴅᴇ/ᴜʙᴜɴᴛᴜ/ᴀɪᴘʀᴏᴛᴏᴛʏᴘᴇ2023$**
+ * ꜱᴛᴇᴘ 1: ᴄʀᴇᴀᴛᴇ ꜰɪʟᴇ.ᴘʏ 
 ```
-code firstpy.py #enter จะเปิด vscode ที่สามารถเขียนโค้ดลงไปได้ then press ctrl+s 
+ᴄᴏᴅᴇ ꜰɪʀꜱᴛᴘʏ.ᴘʏ #ᴇɴᴛᴇʀ จะเปิด ᴠꜱᴄᴏᴅᴇ ที่สามารถเขียนโค้ดลงไปได้ ᴛʜᴇɴ ᴘʀᴇꜱꜱ ᴄᴛʀʟ+ꜱ 
 ```
- * Step 2: Commit to GitHub
-**make sure to bind your GitHub account first**
+ * ꜱᴛᴇᴘ 2: ᴄᴏᴍᴍɪᴛ ᴛᴏ ɢɪᴛʜᴜʙ
+**ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛᴏ ʙɪɴᴅ ʏᴏᴜʀ ɢɪᴛʜᴜʙ ᴀᴄᴄᴏᴜɴᴛ ꜰɪʀꜱᴛ**
 ```
-git pull
-git add fisrtpy.py
-git commit -m "{commit describe}"
-git push #enter username and password of youe GH
+ɢɪᴛ ᴘᴜʟʟ
+ɢɪᴛ ᴀᴅᴅ ꜰɪꜱʀᴛᴘʏ.ᴘʏ
+ɢɪᴛ ᴄᴏᴍᴍɪᴛ -ᴍ "{ᴄᴏᴍᴍɪᴛ ᴅᴇꜱᴄʀɪʙᴇ}"
+ɢɪᴛ ᴘᴜꜱʜ #ᴇɴᴛᴇʀ ᴜꜱᴇʀɴᴀᴍᴇ ᴀɴᴅ ᴘᴀꜱꜱᴡᴏʀᴅ ᴏꜰ ʏᴏᴜᴇ ɢʜ
 ```
- * Step 3: Test execute file
-**on Virtual Machine path that we already ssh into server**
+ * ꜱᴛᴇᴘ 3: ᴛᴇꜱᴛ ᴇxᴇᴄᴜᴛᴇ ꜰɪʟᴇ
+**ᴏɴ ᴠɪʀᴛᴜᴀʟ ᴍᴀᴄʜɪɴᴇ ᴘᴀᴛʜ ᴛʜᴀᴛ ᴡᴇ ᴀʟʀᴇᴀᴅʏ ꜱꜱʜ ɪɴᴛᴏ ꜱᴇʀᴠᴇʀ**
 ```
-git pull
-python firstpy.py
+ɢɪᴛ ᴘᴜʟʟ
+ᴘʏᴛʜᴏɴ ꜰɪʀꜱᴛᴘʏ.ᴘʏ
 ```
 
 --- 
 
-## [Test edit file (ครั้งที่ 2)](https://github.com/nxxk23/AIPrototype2023/commit/f86fd74746b7fd4fbcdfe10d8b2edf4ba46edb5f)
+## [ᴛᴇꜱᴛ ᴇᴅɪᴛ ꜰɪʟᴇ (ครั้งที่ 2)](https://github.com/nxxk23/AIPrototype2023/commit/f86fd74746b7fd4fbcdfe10d8b2edf4ba46edb5f)
 ```
-code {ชื่อไฟล์}  #create แต่ถ้าชื่อไฟล์ที่มีอยู่แล้วก็จะเปิดไฟล์ให้เราแก้ไข
+ᴄᴏᴅᴇ {ชื่อไฟล์}  #ᴄʀᴇᴀᴛᴇ แต่ถ้าชื่อไฟล์ที่มีอยู่แล้วก็จะเปิดไฟล์ให้เราแก้ไข
 ```
 ```
-git status #show file status that had been edited or created 
+ɢɪᴛ ꜱᴛᴀᴛᴜꜱ #ꜱʜᴏᴡ ꜰɪʟᴇ ꜱᴛᴀᴛᴜꜱ ᴛʜᴀᴛ ʜᴀᴅ ʙᴇᴇɴ ᴇᴅɪᴛᴇᴅ ᴏʀ ᴄʀᴇᴀᴛᴇᴅ 
 ```
- * **after check status just do the same process to commit file**
+ * **ᴀꜰᴛᴇʀ ᴄʜᴇᴄᴋ ꜱᴛᴀᴛᴜꜱ ᴊᴜꜱᴛ ᴅᴏ ᴛʜᴇ ꜱᴀᴍᴇ ᴘʀᴏᴄᴇꜱꜱ ᴛᴏ ᴄᴏᴍᴍɪᴛ ꜰɪʟᴇ**
 ```
-git add fisrtpy.py
-git commit -m "{commit describe}"
-git push # save on internet
+ɢɪᴛ ᴀᴅᴅ ꜰɪꜱʀᴛᴘʏ.ᴘʏ
+ɢɪᴛ ᴄᴏᴍᴍɪᴛ -ᴍ "{ᴄᴏᴍᴍɪᴛ ᴅᴇꜱᴄʀɪʙᴇ}"
+ɢɪᴛ ᴘᴜꜱʜ # ꜱᴀᴠᴇ ᴏɴ ɪɴᴛᴇʀɴᴇᴛ
 ```
- * **on Virtual Machine path that we already ssh into server**
+ * **ᴏɴ ᴠɪʀᴛᴜᴀʟ ᴍᴀᴄʜɪɴᴇ ᴘᴀᴛʜ ᴛʜᴀᴛ ᴡᴇ ᴀʟʀᴇᴀᴅʏ ꜱꜱʜ ɪɴᴛᴏ ꜱᴇʀᴠᴇʀ**
 ```
-git pull
-python firstpy.py
+ɢɪᴛ ᴘᴜʟʟ
+ᴘʏᴛʜᴏɴ ꜰɪʀꜱᴛᴘʏ.ᴘʏ
 ```
 ---
 
-## [Test edit file (ครั้งที่ 3)](firstpy.py)
+## [ᴛᴇꜱᴛ ᴇᴅɪᴛ ꜰɪʟᴇ (ครั้งที่ 3)](firstpy.py)
 ```
-code {ชื่อไฟล์}  #create แต่ถ้าชื่อไฟล์ที่มีอยู่แล้วก็จะเปิดไฟล์ให้เราแก้ไข
-```
-
-📌 **เราจะไม่แก้โค้ดเพื่อ commit ใหม่ ปกติจะเปิดช่องให้คนใส่ input ได้**
-```
-cat firstpy.py #on vm >> display code in file
+ᴄᴏᴅᴇ {ชื่อไฟล์}  #ᴄʀᴇᴀᴛᴇ แต่ถ้าชื่อไฟล์ที่มีอยู่แล้วก็จะเปิดไฟล์ให้เราแก้ไข
 ```
 
-- this is the input:
+📌 **เราจะไม่แก้โค้ดเพื่อ ᴄᴏᴍᴍɪᴛ ใหม่ ปกติจะเปิดช่องให้คนใส่ ɪɴᴘᴜᴛ ได้**
+```
+ᴄᴀᴛ ꜰɪʀꜱᴛᴘʏ.ᴘʏ #ᴏɴ ᴠᴍ >> ᴅɪꜱᴘʟᴀʏ ᴄᴏᴅᴇ ɪɴ ꜰɪʟᴇ
+```
+
+- ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ɪɴᴘᴜᴛ:
   ```
-  python firstpy.py --num1 -XX 10
+  ᴘʏᴛʜᴏɴ ꜰɪʀꜱᴛᴘʏ.ᴘʏ --ɴᴜᴍ1 -xx 10
   ```
-- this is the output:
+- ᴛʜɪꜱ ɪꜱ ᴛʜᴇ ᴏᴜᴛᴘᴜᴛ:
   ```
-  the input XX is 10
-  we are in the main function
+  ᴛʜᴇ ɪɴᴘᴜᴛ xx ɪꜱ 10
+  ᴡᴇ ᴀʀᴇ ɪɴ ᴛʜᴇ ᴍᴀɪɴ ꜰᴜɴᴄᴛɪᴏɴ
   9
-  Hello World!
+  ʜᴇʟʟᴏ ᴡᴏʀʟᴅ!
   ```
 
