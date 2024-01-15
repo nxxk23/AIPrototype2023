@@ -14,7 +14,7 @@ def hellonink():
 
 @app.route("/home2") #add route for search web
 def home2():
-    return render_template("home.html",Name='nink')
+    return render_template("home.html",name='nink')
 
 if __name__=="__main__": 
     app.run(host='0.0.0.0', debug=True,port=5001) #host=0.0.0.0 :)
