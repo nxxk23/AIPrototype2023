@@ -12,11 +12,15 @@ def helloworld():
 def hellonink():
     return "Hello, Nink!"
 
+@app.route("/home2") #add route for search web2
+def home2():
+    return render_template("home.html", name="nink")
+
 @app.route("/home", methods={'POST','GET'}) #add POST send message inbox and GET to get message from url
 def homefn():
     if request.method == "GET":
         print('we are in home(GET)', file=sys.stdout)
-        namein = request.form.get('fname')
+        namein = request.args.get('fname')
         print(namein, file=sys.stdout)
         return render_template("home.html", name=namein)
 
