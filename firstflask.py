@@ -4,6 +4,18 @@ import json
 
 app = Flask(__name__) #start server
 
+#api
+@app.route("/request", method = {'POST'})
+def web_service_API():
+
+    payload = request.data.decode("utf-8")
+    inmessage = json.loads(payload)
+
+    print(inmessage)
+
+    json_data = json.dumps({'y': 'received!'})
+    return json_data
+
 @app.route("/") #add route for search web1
 def helloworld():
     return "Hello, World!"
