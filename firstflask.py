@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, make_response 
-
+import sys
 import json
 
 app = Flask(__name__) #start server
@@ -18,8 +18,8 @@ def homefn():
     #getting input with name = fname in HTML form
     namein = request.form.get('fname')
     lastnamein = request.form.get('lname')
-    print(namein)
-    print(lastnamein) #addinput from web into our html
+    print(namein, file=sys.stdout)
+    print(lastnamein, file=sys.stdout) #addinput from web into our html
     return render_template("home.html", name=namein)
 
 if __name__=="__main__": 
