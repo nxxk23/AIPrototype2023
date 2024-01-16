@@ -12,7 +12,7 @@ def helloworld():
 def hellonink():
     return "Hello, Nink!"
 
-@app.route("/home", methods={'POST'}) #add route for search web
+@app.route("/home", methods={'POST','GET'}) #add POST send message inbox and GET to get message from url
 def homefn():
     print('we are in home')
     #getting input with name = fname in HTML form
