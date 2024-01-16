@@ -5,8 +5,23 @@
         <title>Fisrt Flask Web App</title>
     </head>
     <body>
-        <h1>Welcome to my flask Web App</h1>
+        <h1>Welcome to my Flask Web App</h1>
         <h2>Narakorn {{3**5}}</h2>
         <h3>{{name}}</h3>
+
+        <form action = "{{url_for_('homefn')}}" method = "post">
+
+            <label for="firstname">First Name:</label>
+        
+            <input type="text" id="firstname" name="fname" placeholder="first name">
+        
+            <label for="lastname">Last Name:</label>
+        
+            <input type="text" id="lastname" name="lname" placeholder="last name">
+        
+            <button type="submit">Login</button>
+        </form>
     </body>
 </html>
+
+
