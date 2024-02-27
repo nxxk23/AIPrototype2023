@@ -1,9 +1,9 @@
 # **𝗔𝗜𝗣𝗿𝗼𝘁𝗼𝘁𝘆𝗽𝗲𝟮𝟬𝟮𝟯👩🏻‍💻**
 
-## ​[🇼​​🇪​​🇧​​🇵​​🇦​​🇬​​🇪​ 📱](https://nxxk23.github.io/test_webpage/index.html)
+## ​[ᴡᴇʙᴘᴀɢᴇ 📱](https://nxxk23.github.io/test_webpage/index.html)
   ### ⋆ [ɢɪᴛʜᴜʙ ᴘʀᴏᴊᴇᴄᴛ :octocat:](https://github.com/nxxk23/PROJECT)
 
-## [​🇼​​🇪​​🇧​​🇦​​🇵​​🇵​ 🖥](https://qmcnn.github.io/AIPrototype2023/WebApp/index.html)
+## [ᴡᴇʙᴀᴘᴘ​ 🖥](https://qmcnn.github.io/AIPrototype2023/WebApp/template-html/index.html)
 
 
 ## **ʟᴇᴄᴛᴜʀᴇ✨​**
