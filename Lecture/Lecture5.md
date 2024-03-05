@@ -1,4 +1,4 @@
-# [🚩ᴘʏᴛʜᴏɴ ꜱᴜʙᴘʀᴏᴄᴇꜱꜱ 📝](https://docs.python.org/3/library/subprocess.html#using-the-subprocess-module)
+# [🚩ᴘʏᴛʜᴏɴ ꜱᴜʙᴘʀᴏᴄᴇꜱꜱ 📝](https://github.com/nxxk23/AIPrototype2023/blob/main/python_subprocess.py)
   
   💬 ᴜꜱɪɴɢ ᴘʏᴛʜᴏɴ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ᴀɴᴏᴛʜᴇʀ ᴘʀᴏɢʀᴀᴍ ꜰɪʟᴇ
   
